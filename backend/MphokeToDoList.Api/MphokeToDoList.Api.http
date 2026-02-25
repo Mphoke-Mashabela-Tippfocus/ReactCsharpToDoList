@@ -1,0 +1,6 @@
+@MphokeToDoList.Api_HostAddress = http://localhost:5098
+
+GET {{MphokeToDoList.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

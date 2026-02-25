@@ -1,0 +1,134 @@
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.task-card {
+  background: #52a1b1;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+.task-title {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.task-desc {
+  color: #e0f1f4;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.task-meta {
+  font-size: 0.8rem;
+  color: #cce4eb;
+  margin-bottom: 10px;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.task-actions button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.edit-btn {
+  background: #fff;
+  color: #027e8f;
+}
+
+.edit-btn:hover {
+  background: #f0f0f0;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+}
+
+.task-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.task-input:focus {
+  outline: none;
+  box-shadow: 0 0 4px #027e8f;
+}
+
+.task-edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.save-btn {
+  background: #fff;
+  color: #027e8f;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.save-btn:hover {
+  background: #e0f1f4;
+}
+
+.cancel-btn {
+  background: #ff4d4f;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cancel-btn:hover {
+  background: #d9363e;
+}
+
+.no-tasks {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
